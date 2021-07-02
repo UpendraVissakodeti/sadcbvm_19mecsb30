@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+class range_of_prime_numbers
+{
+public static void main(String args[])
+{
+int n,m,i,j,count;
+Scanner scan=new Scanner(System.in);
+System.out.print("enter n range:");
+n=scan.nextInt();
+System.out.print("enter m range:");
+m=scan.nextInt();
+for(i=n;i<=m;i++)
+{
+count=0;
+for(j=1;j<=i;j++)
+{
+if(i%j==0)
+count=count+1;
+}
+if(count==2)
+System.out.print(i+" ");
+}
+}
+}
+...........................................
+enter n range:1
+enter m range:10
+2 3 5 7
