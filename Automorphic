@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+class automorphic
+{
+public static void main(String args[])
+{
+int n,m,l;
+Scanner sc=new Scanner(System.in);
+System.out.print("enter n value");
+n=sc.nextInt();
+m=n*n;
+l=m%100;
+if(l==n)
+System.out.println(n+" is an automorphic");
+else
+System.out.println(n+" is not an automorphic");
+}
+}
+.................................
+
+
+enter n value76
+76 is an automorphic
